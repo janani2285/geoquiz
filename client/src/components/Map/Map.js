@@ -51,7 +51,7 @@ export class MapContainer extends Component {
     ).then(
       (response) => {
        
-        const country = response.results[response.results.length-1].formatted_address;
+        const country = response.results[response.results.length-2].formatted_address;
         
         if (
           country.toLowerCase().trim() ===
